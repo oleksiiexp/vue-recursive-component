@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="./index.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<template v-for="(child, index) in nestedData">
+			<recursive-component :nested-data="child"></recursive-component>
+		</template>
+	</div>
+	<script src="./index.js"></script>
+</body>
+</html>
